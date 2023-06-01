@@ -385,7 +385,7 @@ article>h6>a{
         }
         .second{
             border: none;
-            height: 240vh;
+            height: 180vh;
             padding: 10px;
         }
         .hr{
@@ -412,6 +412,15 @@ article>h6>a{
         }
         #ist-tab{
           display: none;
+        }
+        .third{
+          border: none;
+          padding: 20px;
+        }
+        #contact>div>h4{
+          width: 70%;
+          font-size: 15px;
+          font-family: noto sans;
         }
     }
  /* Small devices (portrait tablets and large phones, 600px and up) */

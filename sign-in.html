@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Sign-In to Evolv</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+        .container {
+          width: 600px;
+          margin: 60px auto;
+        }
+    
+        form {
+          padding: 30px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h2{
+          text-align: center;
+          margin-bottom: 20px;
+        }
+    
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+          padding: 15px;
+          margin-bottom: 15px;
+          width: 100%;
+          box-sizing: border-box;
+          border-radius: 22px;
+          border: 1px solid #a3a0a0;
+        }
+    
+        input[type="email"]:hover,
+        input[type="tel"]:hover,
+        input[type="password"]:hover{
+          border: 2px solid rgb(255, 0, 195);
+        }
+    
+        .social-buttons {
+         display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px;
+        }
+    
+        .social-buttons button {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          border-radius: 18px;
+          border: 1px solid #a3a0a0;
+          cursor: pointer;
+        }
+        .social-buttons>button:hover{
+          border: 2px solid rgb(255, 0, 195);
+        }
+    
+        .social-buttons button img {
+          width: 25px;
+          margin-right: 10px;
+        }
+    
+        button[type="submit"] {
+          padding: 15px ;
+          font-size: 20px;
+          width: 100%;
+          border-radius: 25px;
+          margin-top: 10px;
+          margin-bottom:  15px;
+          border: 1px solid #a3a0a0;
+          background-color: rgb(81, 81, 149);
+
+        }
+        span{
+          padding-left: 10px;
+        }
+        .line-with-text {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          font-size: 23px;
+        }
+      
+        .line {
+          flex-grow: 1;
+          height: 1px;
+          background-color: #a3a0a0;
+          margin: 0 10px;
+          
+        }
+        @media only screen and (max-width: 600px){
+          .container {
+            width: 400px;
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+      <form action="" method="get">
+          <button style="width: 60px;padding:8px;"><a href="../pricing-page/price.html" style="color: black;">back</a></button>
+          <h2>Welcome Back!</h2>
+          <div class="social-buttons">
+            <button style="width: 40%;">
+              <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png?w=740&t=st=1685616805~exp=1685617405~hmac=57d1d884b2c53295b5d388510c552dc677a500e95cf7060e88aef6055fb3df9e" alt="Google">
+              Sign in with Google
+            </button>
+            <button style="width: 40%;">
+              <img src="https://img.freepik.com/free-icon/twitter_318-566762.jpg?size=626&ext=jpg&uid=R104727820&ga=GA1.2.1617067752.1685356839" alt="Twitter">
+              Sign in with Twitter
+            </button>
+          </div>
+
+
+          <span>
+          <div class="line-with-text">
+            <div class="line"></div>
+            <span>or</span>
+            <div class="line"></div>
+          </div>
+        </span>
+
+           <span>Name:</span>
+          <input type="email" placeholder="name@email.com" required>
+          <span>Password:</span>
+          <input type="password" placeholder="Password" minlength="8" required>
+          <button type="submit" value="submit"> Log in</button>
+          <p><a href="">Forgot my password</a></p>
+          <p>Don't have an account? <a href="../pricing-page/sign-up.html">Sign up</a></p>
+        </form>
+      </div>
+</body>
+</html>
